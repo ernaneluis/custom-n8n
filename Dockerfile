@@ -15,7 +15,6 @@ RUN npm install -g \
   cheerio \
   sanitize-html \
   marked \
-  uuld \
   validator \
   zod \
   knex \
