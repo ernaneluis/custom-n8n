@@ -7,6 +7,7 @@ USER root
 RUN npm install -g \
   @modelcontextprotocol/sdk \
   n8n-nodes-mcp \
+  @langchain/core \
   firecrawl-mcp \
   lodash \
   date-fns \
@@ -16,6 +17,7 @@ RUN npm install -g \
   marked \
   uuld \
   validator \
+  zod \
   knex \
   pg \
   sqlite3 \
