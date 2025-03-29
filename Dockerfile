@@ -22,5 +22,10 @@ RUN npm install -g \
   sqlite3 \
   mysql2
 
+# List installed package versions and save to a file
+RUN npm list -g --depth=0 > /installed-packages.txt && \
+    echo "Installed packages:" && \
+    cat /installed-packages.txt
+
 # Revert to the node user for security purposes
 USER node
