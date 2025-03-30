@@ -27,5 +27,7 @@ RUN npm list -g --depth=0 > /installed-packages.txt && \
     echo "Installed packages:" && \
     cat /installed-packages.txt
 
+ENV NODE_FUNCTION_ALLOW_EXTERNAL=*
+ENV N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
 # Revert to the node user for security purposes
 USER node
